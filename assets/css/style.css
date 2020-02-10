@@ -16,7 +16,7 @@ body
 body
 {
   font-family: 'IBM Plex Sans';
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
 
   color: #000;
@@ -90,7 +90,7 @@ html { scroll-behavior: smooth; }
 
 /* Scrollbar */
   ::-webkit-scrollbar {
-    width: 8px;
+    width: 0.5rem;
   }
   /* Track */
   ::-webkit-scrollbar-track {
@@ -100,7 +100,7 @@ html { scroll-behavior: smooth; }
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #02cbd8;
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 
 /* Scrollbar end */
@@ -109,9 +109,9 @@ html { scroll-behavior: smooth; }
   .container
   {
     width: 100%;
-    max-width: 1700px;
+    max-width: 106.25rem;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 1.875rem;
   }
 
 /* Header */
@@ -121,7 +121,7 @@ html { scroll-behavior: smooth; }
     top: 0;
     left: 0;
 
-    margin-top: 30px;
+    margin-top: 1.875rem;
     width: 100%;
 
     background-size: contain;
@@ -132,8 +132,8 @@ html { scroll-behavior: smooth; }
   }
 
   .header-wrap {
-    max-width: 1720px;
-    padding: 0 80px;
+    max-width: 107.5rem;
+    padding: 0 5rem;
     margin: 0 auto;
 
     display: -webkit-flex;
@@ -146,12 +146,12 @@ html { scroll-behavior: smooth; }
 
   .menu {
     position: absolute;
-    top: -30px;
+    top: -1.875rem;
     left: 0;
-    padding: 71px 130px 0;
+    padding: 4.4375rem 8.125rem 0;
     
-    width: 900px;
-    height: 550px;
+    width: 56.25rem;
+    height: 34.375rem;
     background-color: transparent;
 
     transition: all .2s ease-in-out;
@@ -172,11 +172,11 @@ html { scroll-behavior: smooth; }
   .menu-burger {
     position: absolute;
     
-    top: 43px;
-    left: 130px;
+    top: 2.6875rem;
+    left: 8.125rem;
     cursor: pointer;
-    width: 31px;
-    height: 21px; 
+    width: 1.9375rem;
+    height: 1.3125rem; 
     z-index: 2;
     overflow: hidden;
     transition: .2s ease-out transform;
@@ -186,7 +186,7 @@ html { scroll-behavior: smooth; }
     position: relative;
     
     display: block;
-    width: 30px;
+    width: 1.875rem;
     height: 2px;
     background: #fff;
     transition: all .2s ease-in-out;
@@ -195,11 +195,11 @@ html { scroll-behavior: smooth; }
   .menu-burger span::after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 0.625rem;
     left: 0;
     
     display: block;
-    width: 20px;
+    width: 1.25rem;
     height: 2px;
     background: #fff;
     transition: .2s ease-in-out;
@@ -207,7 +207,7 @@ html { scroll-behavior: smooth; }
 
   .menu-burger:hover span {
     background-color: #02cbd88a;
-    transform: translateX(-5px);
+    transform: translateX(-0.3125rem);
   }
 
   .menu-burger:hover span::after {
@@ -215,32 +215,32 @@ html { scroll-behavior: smooth; }
   }
 
   .menu-burger.active {
-    width: 21px;
-    height: 21px;
-    transform: translateY(-10px);
+    width: 1.3125rem;
+    height: 1.3125rem;
+    transform: translateY(-0.625rem);
   }
 
   .menu-burger.active span {
-    transform: translateY(10px) rotate(45deg);
-    width: 20px;
+    transform: translateY(0.625rem) rotate(45deg);
+    width: 1.25rem;
   }
 
   .menu-burger.active span::after {
-    transform: translateY(-10px) rotate(-90deg);
+    transform: translateY(-0.625rem) rotate(-90deg);
     
   }
 
   .header-phone {
-    margin-top: 40px;
-    padding-bottom: 74px;
+    margin-top: 2.5rem;
+    padding-bottom: 4.625rem;
   }
 
   .header-phone a {
     color: #ffffff;
     font-family: 'IBM Plex Sans';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 1.125rem;
     text-transform: uppercase;
     transition: .25s ease-in color;
   }
@@ -250,22 +250,20 @@ html { scroll-behavior: smooth; }
   }
 
   .menu-header {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 63px;
+    padding-bottom: 3.9375rem;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 
   .lang-switcher {
     position: relative;
-    
-    padding-right: 20px;
-
+    padding-right: 1.25rem;
   }
 
   .lang-switcher ul {
@@ -273,27 +271,27 @@ html { scroll-behavior: smooth; }
     visibility: hidden;
     opacity: 0;
     
-    top: 20px;
+    top: 1.25rem;
     width: 100%;
     font-weight: 500;
     background-color: #fff;
-    transform: translateY(-30px) scaleY(.5);
+    transform: translateY(-1.875rem) scaleY(.5);
     transition: .2s linear opacity,
                 .2s linear transform,
                 .25s linear visibility;
   }
 
   .lang-switcher ul li {
-    margin: 10px 0; 
+    margin: 0.625rem 0; 
   }
 
   .lang-switcher span{
     position: relative;
     color: #000000;
 
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 0.875rem;
     text-transform: uppercase;
     cursor: pointer;
     transition: .4s ease-out color;
@@ -309,12 +307,12 @@ html { scroll-behavior: smooth; }
 
   .lang-switcher span.main-lang::after {
     position: absolute;
-    top: calc(50% - 5px);
+    top: calc(50% - 0.3125rem);
     right: -20px;
     content: "";
     display: block;
-    width: 7px;
-    height: 7px;
+    width: 0.4375rem;
+    height: 0.4375rem;
     border-left: 2px solid #000;
     border-bottom: 2px solid #000;
     transform: rotate(-45deg);
@@ -347,7 +345,7 @@ html { scroll-behavior: smooth; }
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    max-height: 230px;
+    max-height: 14.375rem;
   }
 
   .menu-main ul {
@@ -363,9 +361,9 @@ html { scroll-behavior: smooth; }
   }
 
   .menu-main > ul > li > a {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 14px;
+    line-height: 0.875rem;
     text-transform: uppercase;
     transition: .1s linear color;
   }
@@ -391,7 +389,7 @@ html { scroll-behavior: smooth; }
   .social ul {
     height: 100%;
     width: 100%;
-    max-width: 30px;
+    max-width: 1.875rem;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -403,7 +401,7 @@ html { scroll-behavior: smooth; }
   }
 
   .social ul li:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .social ul li svg {
@@ -444,9 +442,9 @@ html { scroll-behavior: smooth; }
 
   .carousel.intro .slick-arrow {
     position: absolute;
-    top: calc(50% - 12px);
-    width: 54px;
-    height: 54px;
+    top: calc(50% - 0.75rem);
+    width: 3.375rem;
+    height: 3.375rem;
     border: 1px solid rgba(255, 255, 255, .2);
     background: none;
     font-size: 0;
@@ -458,27 +456,27 @@ html { scroll-behavior: smooth; }
   .carousel.intro .slick-arrow::after {
     position: absolute;
     content: "";
-    left: calc(50% - 5px);
-    top: calc(50% - 7px);
+    left: calc(50% - 0.3125rem);
+    top: calc(50% - 0.4375rem);
 
-    width: 14px;
-    height: 14px;
+    width: 0.875rem;
+    height: 0.875rem;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
     transform: rotate(45deg);
   }
 
   .carousel.intro .slick-next {
-    right: 130px;
+    right: 8.125rem;
   }
 
   .carousel.intro .slick-next::after {
-    left: calc(50% - 9px);
+    left: calc(50% - 0.5625rem);
     transform: rotate(-135deg);
   }
 
   .carousel.intro .slick-prev {
-    left: 130px;  
+    left: 8.125rem;  
   }
 
   .carousel.intro .slick-disabled {
@@ -514,27 +512,27 @@ html { scroll-behavior: smooth; }
   }
 
   .custom-slide .custom-slide-content {
-    margin-top: 260px;
+    margin-top: 16.25rem;
     text-align: center;
     
   }
 
   .custom-slide .custom-slide-content h1 {
     color: #ffffff;
-    line-height: 135px;
+    line-height: 8.4375rem;
     font-family: "IBM Plex Serif";
-    font-size: 150px;
+    font-size: 9.375rem;
     font-weight: 100;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
   }
 
   .custom-slide .custom-slide-content p {
     opacity: 0.6;
     color: #ffffff;
-    line-height: 28px;
-    font-size: 30px;
+    line-height: 1.75rem;
+    font-size: 1.875rem;
     font-weight: 300;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
 
   .blue-btn {
@@ -542,15 +540,15 @@ html { scroll-behavior: smooth; }
     display: inline-block;
     
     width: 100%;
-    max-width: 220px;
-    height: 50px;
+    max-width: 13.75rem;
+    height: 3.125rem;
     background-color: #02cbd8;
 
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 50px;
+    letter-spacing: 0.0625rem;
+    line-height: 3.125rem;
     transition: .2s ease-in-out background-color;
   }
 
@@ -560,18 +558,18 @@ html { scroll-behavior: smooth; }
 
   .blue-btn::after {
     position: absolute;
-    left: -8px;
+    left: -0.5rem;
     top: calc(50% - 0.5px);
     content: "";
 
-    width: 40px;
+    width: 2.5rem;
     height: 1px;
     background-color: #fff;
     transition: .2s ease-in-out transform;
   }
 
   .blue-btn:hover::after {
-    transform: translateX(-10px);
+    transform: translateX(-0.625rem);
   }
 
   .carousel.nav {
@@ -593,16 +591,16 @@ html { scroll-behavior: smooth; }
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    bottom: 130px;
-    left: calc(50vw - 225px);
-    width: 450px;
+    bottom: 8.125rem;
+    left: calc(50vw - 14.0625rem);
+    width: 28.125rem;
     height: 2px;
   }
 
   .carousel.nav .slick-dots li[role="presentation"] {
     position: relative;
     
-    width: calc(450px / 3);
+    width: calc(28.125rem / 3);
     height: 2px;
     background: none;
     border: none;
@@ -632,10 +630,10 @@ html { scroll-behavior: smooth; }
   .carousel.nav .slick-dots li[role="presentation"] button::after {
     position: absolute;
     color: rgba(255, 255, 255, .7);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'IBM Plex Sans';
     font-weight: 400;
-    line-height: 14px;
+    line-height: 0.875rem;
 
     cursor: pointer;
     
@@ -648,35 +646,35 @@ html { scroll-behavior: smooth; }
 
   .carousel.nav .slick-dots li[role="presentation"]:nth-of-type(1) button::after {
     content: "01";
-    left: -67.25px;
-    top: -7.5px;
+    left: -4.2031rem;
+    top: -0.4688rem;
   }
 
   .carousel.nav .slick-dots li[role="presentation"]:nth-of-type(2) button::after {
     content: "02";
     visibility: hidden;
-    left: calc(50% - 11.125px);
-    top: 5px;
+    left: calc(50% - 0.6953rem);
+    top: 0.3125rem;
     opacity: 0;
   }
 
   .carousel.nav .slick-dots li.slick-active:nth-of-type(2) button::after {
     content: "02";
     visibility: visible;
-    transform: translateY(5px);
+    transform: translateY(0.3125rem);
     opacity: 1; 
   }
 
   .carousel.nav .slick-dots li[role="presentation"]:nth-of-type(3) button::after {
     content: "03";
-    right: -67.25px;
-    top: -7.5px;
+    right: -4.2031rem;
+    top: -0.4688rem;
   }
 /* Intro end */
 
 /* About us */
   section.about-us {
-    padding: 100px 0 150px;
+    padding: 6.25rem 0 9.375rem;
   }
 
   .about-us-header {
@@ -686,36 +684,36 @@ html { scroll-behavior: smooth; }
   .about-us-header h2 {
     position: relative;
     color: #02cbd8;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 3.125rem;
     text-transform: uppercase;
     /* Text style for "Про нас" */
-    letter-spacing: 4.8px;
-    margin-bottom: 120px;
+    letter-spacing: 0.3rem;
+    margin-bottom: 7.5rem;
   }
 
   .about-us-header h2::after {
     position: absolute;
-    bottom: -21px;
+    bottom: -1.3125rem;
     left: 1px;
     content:'';
-    width: 100px;
+    width: 6.25rem;
     height: 1px;
     background-color: #02cbd8;
   }
 
   .about-us-header p {
-    max-width: 740px;
+    max-width: 46.25rem;
     color: #000000;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 2.625rem;
   }
 
   .about-us-header-photo {
-    width: 620px;
-    height: 720px;
+    width: 38.75rem;
+    height: 45rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -734,20 +732,20 @@ html { scroll-behavior: smooth; }
 
 @media screen and (max-width: 1440px) {
   .carousel.intro h1 {
-    font-size: 120px ;
-    margin-bottom: 60px;
+    font-size: 7.5rem ;
+    margin-bottom: 3.75rem;
   }
 
   .carousel.intro .custom-slide .custom-slide-content {
-    margin-top: 350px;
+    margin-top: 21.875rem;
   }
 
   .carousel.intro .slick-next {
-    right: 80px;
+    right: 5rem;
   }
 
   .carousel.intro .slick-prev {
-    left: 80px;
+    left: 5rem;
   }
 }
 
