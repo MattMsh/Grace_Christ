@@ -792,7 +792,7 @@ html {
 
   
   @media screen and (max-width: 1440px) {
-    .carousel.intro h1 {
+    /*.carousel.intro h1 {
       font-size: 120px ;
       margin-bottom: 60px;
     }
@@ -807,7 +807,7 @@ html {
 
     .carousel.intro .slick-prev {
       left: 80px;
-    }
+    }*/
   }
 
   @media screen and (max-width: 769px) {
@@ -1481,27 +1481,7 @@ html {
         content: "03";
         right: -4.2031rem;
         top: -0.4688rem;
-      }
-
-      
-      @media screen and (max-width: 1440px) {
-        .carousel.intro h1 {
-          font-size: 7.5rem ;
-          margin-bottom: 3.75rem;
-        }
-
-        .carousel.intro .custom-slide .custom-slide-content {
-          margin-top: 21.875rem;
-        }
-
-        .carousel.intro .slick-next {
-          right: 5rem;
-        }
-
-        .carousel.intro .slick-prev {
-          left: 5rem;
-        }
-      }    
+      } 
   }
 
 /* rem styles */
