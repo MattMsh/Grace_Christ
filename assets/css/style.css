@@ -1476,7 +1476,7 @@ html {
 
 
 /* Mobile horizontal */
-@media screen and (max-width: 500px) and (orientation: landscape) {
+@media only screen and (max-device-width: 500px) and (orientation: landscape) {
   header {
     top: 10px;
     margin-top: 0;
