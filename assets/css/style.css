@@ -86,7 +86,7 @@ html {
   font-size: 1vw;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   html { 
     font-size: 0.855vw;
   }
@@ -118,9 +118,23 @@ html {
   .container
   {
     width: 100%;
-    max-width: 1700px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
   }
 /* /Containers */
 
@@ -132,6 +146,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100px;
 
     margin-top: 30px;
     width: 100%;
@@ -144,8 +159,8 @@ html {
   }
 
   .header-wrap {
-    max-width: 1720px;
-    padding: 0 80px;
+    max-width: 960px;
+    padding: 0 15px;
     margin: 0 auto;
 
     display: -webkit-flex;
@@ -168,6 +183,7 @@ html {
 
     transition: all .2s ease-in-out;
     transform: translateX(-100%);
+    z-index: 1;
   }
 
   .menu.active {
@@ -229,7 +245,6 @@ html {
   .menu-burger.active {
     width: 21px;
     height: 21px;
-    transform: translateY(-10px);
   }
 
   .menu-burger.active span {
@@ -243,8 +258,9 @@ html {
   }
 
   .header-phone {
+    position: absolute;
+    right: 130px;
     margin-top: 40px;
-    padding-bottom: 74px;
   }
 
   .header-phone a {
@@ -451,7 +467,18 @@ html {
         margin-bottom: 70px;
         padding-bottom: 60px;
       }
-    
+      .header-phone {
+        right: 80px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .header-phone {
+        right: 50px;
+      }
+      .menu-burger {
+        left: 50px;
+      }
     }
 
     @media screen and (max-width: 600px) {
@@ -550,6 +577,7 @@ html {
   section.intro-page {
     width: 100%;
     height: 100vh;
+    min-height: 750px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -560,7 +588,7 @@ html {
     position: relative;
     
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
 
   .carousel.intro .slick-list {
@@ -617,11 +645,11 @@ html {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    height: 100vh;
+    height: 100%;
   }
 
   .carousel.intro .slick-slide {
-    height: 100vh;
+    height: 100%;
   }
 
   .custom-slide {
@@ -799,6 +827,16 @@ html {
     top: -7.5008px;
   }
 
+  @media screen and (max-width: 900px) {
+    .carousel.intro .slick-prev {
+      left: 80px;
+    }
+
+    .carousel.intro .slick-next {
+      right: 80px;
+    }
+  }
+
   @media screen and (max-width: 769px) {
     .carousel.intro h1 {
       font-size: 80px;
@@ -806,13 +844,17 @@ html {
       line-height: 1;
     }
   
-    .carousel.intro .custom-slide .custom-slide-content {
-      margin-top: 370px;
-    }
-  
     .carousel.intro .custom-slide .custom-slide-content p {
       font-size: 24px;
       margin-bottom: 140px;
+    }
+
+    .carousel.intro .slick-next {
+      right: 50px;
+    }
+  
+    .carousel.intro .slick-prev {
+      left: 50px;
     }
   }
   
@@ -822,12 +864,15 @@ html {
       left: calc(50vw - 80.5px);
     }
     .carousel.intro .custom-slide .custom-slide-content {
-      margin-top: 200px;
+      margin-top: 150px;
     }
   }
 
   
   @media screen and (max-width: 426px) {
+    section.intro-page {
+      min-height: 100vh;
+    }
     .carousel.intro h1 {
       font-size: 34px;
       line-height: 31px;
@@ -854,50 +899,369 @@ html {
 
 /* About us */
   section.about-us {
-    padding: 100px 0 150px;
+    padding: 80px 0 120px;
   }
 
   .about-us-header {
     display: flex;
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 35px;
+    justify-content: space-between;
   }
 
-  .about-us-header h2 {
+  .about-us-description {
+    padding-top: 50px;
+    margin-right: 30px;
+  }
+
+  .about-us-description h2 {
     position: relative;
     color: #02cbd8;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 1;
     text-transform: uppercase;
-    /* Text style for "Про нас" */
-    letter-spacing: 4.8px;
-    margin-bottom: 120px;
+    letter-spacing: 2.8px;
+    margin-bottom: 60px;
   }
 
-  .about-us-header h2::after {
+  .about-us-description h2::after {
     position: absolute;
-    bottom: -21px;
+    bottom: -11px;
     left: 1px;
-    content:'';
-    width: 100px;
+    content: '';
+    width: 70px;
     height: 1px;
     background-color: #02cbd8;
   }
 
-  .about-us-header p {
-    max-width: 740px;
+  .about-us-description p {
+    max-width: 540px;
     color: #000000;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 26px;
+  }
+
+  .about-us-social {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .about-us-social ul {
+    height: 100%;
+    width: 100%; 
+    max-width: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-us-social ul li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .about-us-social ul li a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+  }
+  .about-us-social ul li a svg {
+    transition: .3s;
+  }
+
+  .about-us-social ul li a:hover svg{
+    opacity: .4;
   }
 
   .about-us-header-photo {
+    display: flex;
     width: 620px;
-    height: 720px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
 
+  .about-us-header-photo img {
+    box-shadow: -30px 30px 0 #eaeaea;
+  }
+
+  .about-us-second-block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-us-verse-and-img {
+    position: relative;
+    padding: 285px 40px 70px 45px;
+    margin-right: 125px;
+    width: 100%;
+    max-width: 320px;
+    min-height: 1px;
+    border-radius: 0 5px 5px 0;
+    background-color: #032131;
+  }
+
+  .about-us-img-wrap {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 410px;
+    height: 250px;
+  }
+
+  .about-us-verse p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "IBM Plex Serif";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .about-us-verse span {
+    position: relative;
+    padding-left: 40px;
+    color: #02cbd8;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 400;
+        line-height: 24px;
+  }
+
+  .about-us-verse span::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 26px;
+    height: 1px;
+    background-color: #02cbd8;
+  }
+
+  .about-us-our-vision {
+    max-width: 375px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 50px;
+    padding-top: 105px;
+  }
+
+  .about-us-our-vision h3 {
+    margin-bottom: 40px;
+    font-family: "IBM Plex Sans";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .about-us-our-vision p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .about-us-our-vision p {
+    color: rgba(0, 0, 0, .8);
+    font-family: "IBM Plex Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .about-us-verse-and-img {
+      margin-right: 0;
+    }
+
+    .about-us-img-wrap {
+      top: 20px;
+      left: 20px;
+      width: 280px;
+      height: auto;
+    }
+
+    .about-us-verse-and-img {
+      padding: 190px 40px 70px 45px;
+    }
+
+    .about-us-our-vision {
+      max-width: 305px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 30px;
+      padding-top: 40px;
+    }
+
+    .about-us-verse p {
+      margin-top: 25px;
+    }
+    
+    .about-us-our-vision h3 {
+      margin-bottom: 40px;
+    }
+
+    .about-us-our-vision p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    .about-us-header {
+      padding-left: 70px;
+    }
+
+    .about-us-description {
+      padding-top: 20px;
+    }
+
+    .about-us-description h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .about-us-description p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .about-us-social {
+      display: none;
+    }
+
+    .about-us-header {
+      padding-left: 0;
+    }
+
+    .about-us-img-wrap {
+      width: 240px; 
+    }
+
+    .about-us-verse-and-img {
+      padding: 165px 20px 70px 20px;
+      min-width: 280px;
+    }
+
+    .about-us-verse p {
+      margin-top: 12px;
+      font-size: 20px;
+      line-height: 28px ;
+    }
+
+    .about-us-verse span {
+      padding-left: 56px;
+    }
+
+    .about-us-verse span::after {
+      width: 40px;
+    }
+
+    .about-us-our-vision h3 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .about-us-our-vision {
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .about-us-header {
+      flex-direction: column-reverse;
+    }
+    .about-us-header-photo {
+      max-width: 260px;
+      max-height: 200px;
+      width: auto;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+      align-self: center;
+    }
+
+    .about-us-header-photo img {
+      height: auto;
+      object-fit: cover;
+      box-shadow: -20px 20px 0 #eaeaea;
+    }
+
+    .about-us-description p {
+      padding-right: 5px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+    .about-us-description h2 {
+      font-size: 30px;
+      line-height: 21px;
+      letter-spacing: 2.4px;
+    }
+
+    .about-us-description h2::after {
+      bottom: -17px;
+    }
+
+    section.about-us {
+      padding: 30px 0 60px;
+    }
+
+    .about-us-description {
+      max-width: 305px;
+      padding-top: 0;
+      margin-right: 0;
+    }
+
+    .about-us-second-block {
+      flex-direction: column;
+    }
+
+    .about-us-img-wrap {
+      position: static;
+      width: 100%;
+    }
+
+    .about-us-verse-and-img {
+      padding: 20px 20px 70px 20px;
+      border-radius: 0;
+    }
+    .about-us-verse {
+      max-width: 240px;
+    }
+
+    .about-us-verse p {
+      padding-right: 20px;
+    }
+
+    .about-us-header,
+    .about-us-second-block {
+      align-items: center;
+    }
+
+    .about-us-our-vision {
+      padding-left: 0;
+    }
+
+    .about-us-our-vision h3 {
+      font-size: 24px;
+      line-height: 18px;
+    }
   }
 
 /* About us end */
@@ -914,7 +1278,7 @@ html {
         width: 100%;
         max-width: 106.25rem;
         margin: 0 auto;
-        padding: 0 1.875rem;
+        padding: 0 1.25rem;
       }
 
     /* Header */
@@ -923,6 +1287,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
+        height: 10rem;
 
         margin-top: 1.875rem;
         width: 100%;
@@ -1347,7 +1712,7 @@ html {
         color: #ffffff;
         font-size: 1.25rem;
         font-weight: 500;
-        letter-spacing: 0.0625rem;
+        letter-spacing: 1px ;
         line-height: 3.125rem;
         transition: .2s ease-in-out background-color;
       }
@@ -1470,6 +1835,193 @@ html {
         right: -4.2031rem;
         top: -0.4688rem;
       } 
+    /* /Intro style */
+
+    /* About us */
+      section.about-us {
+        padding: 6.25rem 0 9.375rem;
+      }
+
+      .about-us-header {
+        display: flex;
+        position: relative;
+        padding-left: 9.0625rem;
+        margin-bottom: 2.1875rem;
+        justify-content: space-between;
+      }
+
+      .about-us-description {
+        padding-top: 9.375rem;
+        margin-right: 3.125rem;
+      }
+
+      .about-us-description h2 {
+        position: relative;
+        color: #02cbd8;
+        font-size: 3.75rem;
+        font-weight: 700;
+        line-height: 3.125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin-bottom: 7.5rem;
+      }
+
+      .about-us-description h2::after {
+        position: absolute;
+        bottom: -1.3125rem;
+        left: 1px ;
+        content:'';
+        width: 6.25rem;
+        height: 1px ;
+        background-color: #02cbd8;
+      }
+
+      .about-us-description p {
+        max-width: 46.25rem;
+        color: #000000;
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 2.625rem;
+      }
+
+      .about-us-social {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .about-us-social ul {
+        height: 100%;
+        width: 100%; 
+        max-width: 1.875rem;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .about-us-social ul li:not(:last-child) {
+        margin-bottom: 1.875rem;
+      }
+
+      .about-us-social ul li a {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        
+      }
+      .about-us-social ul li a svg {
+        transition: .3s;
+      }
+
+      .about-us-social ul li a:hover svg{
+        opacity: .4;
+      }
+
+      .about-us-header-photo {
+        display: flex;
+        padding-left: 3.125rem;
+        padding-bottom: 3.125rem;
+      }
+
+      .about-us-header-photo img {
+        box-shadow: -3.125rem 3.125rem 0 #eaeaea;
+      }
+
+      .about-us-second-block {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .about-us-verse-and-img {
+        position: relative;
+        padding: 35.625rem 5rem 4.375rem 5rem;
+        margin-right: 23.125rem;
+        width: 100%;
+        max-width: 32.5rem;
+        min-height: 56.875rem;
+        border-radius: 0 0.3125rem 0.3125rem 0;
+        background-color: #032131;
+      }
+
+      .about-us-img-wrap {
+        position: absolute;
+        top: 4.375rem;
+        left: 4.375rem;
+        width: 51.25rem;
+        height: 31.25rem;
+      }
+
+      .about-us-verse p {
+        margin-top: 3.75rem;
+        margin-bottom: 2.5rem;
+        color: #ffffff;
+        font-family: "IBM Plex Serif";
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+      }
+
+      .about-us-verse span {
+        position: relative;
+        padding-left: 3.75rem;
+        color: #02cbd8;
+        font-family: "IBM Plex Sans";
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+      }
+
+      .about-us-verse span::after {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        content: "";
+        width: 2.5rem;
+        height: 1px ;
+        background-color: #02cbd8;
+      }
+
+      .about-us-our-vision {
+        max-width: 41.875rem;
+        width: 100%;
+        padding-left: 3.125rem;
+        padding-right: 7.5rem;
+        padding-top: 13.125rem;
+      }
+
+      .about-us-our-vision h3 {
+        margin-bottom: 4.6875rem;
+        font-family: "IBM Plex Sans";
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.875rem;
+      }
+
+      .about-us-our-vision p:not(:last-child) {
+        margin-bottom: 1.875rem;
+      }
+
+      .about-us-our-vision p {
+        opacity: 0.8;
+        font-family: "IBM Plex Sans";
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+      }
+    /* About us end */
   }
 
 /* rem styles */
@@ -1480,44 +2032,52 @@ html {
     and (min-device-width: 320px)
     and (max-device-width: 860px)
     and (orientation:landscape) {
-  header {
-    top: 10px;
-    margin-top: 0;
-  }
-  .header-phone {
-    padding-bottom: 30px;
-  }
-  .carousel.intro .custom-slide .custom-slide-content {
-    margin-top: 100px;
-  }
-  .carousel.nav .slick-dots {
-    bottom: 30px;
-  }
-  .custom-slide .custom-slide-content h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  .carousel.intro .custom-slide .custom-slide-content p {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-  .menu {
-    top: -10px;
-    overflow: auto;
-    padding-bottom: 40px;
-    height: 100vh;
-  }
-  body.menu-open {
-    overflow: hidden; 
-  }
-  .blue-btn {
-    max-width: 180px;
-    height: 40px;
-    font-size: 16px;
-    line-height: 40px;
-  }
-  .carousel.intro button.slick-arrow {
-    visibility: hidden;
-  } 
+  /* Header*/
+    header {
+      top: 10px;
+      margin-top: 0;
+    }
+    .header-phone {
+      padding-bottom: 30px;
+    }
+    .carousel.intro .custom-slide .custom-slide-content {
+      margin-top: 100px;
+    }
+    .carousel.nav .slick-dots {
+      bottom: 30px;
+    }
+    .custom-slide .custom-slide-content h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .carousel.intro .custom-slide .custom-slide-content p {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    .menu {
+      top: -10px;
+      overflow: auto;
+      padding-bottom: 40px;
+      height: 100vh;
+    }
+    body.menu-open {
+      overflow: hidden; 
+    }
+    .blue-btn {
+      max-width: 180px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+    .carousel.intro button.slick-arrow {
+      visibility: hidden;
+    }
+
+  /* About us */
+
+  section.intro-page {
+      min-height: 100vh;
+    }
+
 }
 /* /Mobile horizontal */
