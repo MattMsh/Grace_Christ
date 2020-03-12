@@ -18,6 +18,7 @@ jQuery(document).ready(function($){
     asNavFor: '.carousel.nav',
     speed: 1000,
     draggable: false,
+    lazyload: 'ondemand',
     responsive: [{
       breakpoint: 768,
       settings: {
