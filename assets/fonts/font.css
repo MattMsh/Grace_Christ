@@ -4,7 +4,7 @@
   font-weight: 100;
   font-style: normal;
 
-  src: local('IBM Plex Sans Thin'), local('IBMPlexSans-Thin'), url('Ibmplexsansthin.woff2') format('woff2'), url('Ibmplexsansthin.woff') format('woff'), url('Ibmplexsansthin.ttf') format('truetype');
+  src: local('IBM Plex Sans Thin'), local('IBMPlexSans-Thin'), url('../fonts/Ibmplexsansthin.woff2') format('woff2'), url('../fonts/Ibmplexsansthin.woff') format('woff'), url('../fonts/Ibmplexsansthin.ttf') format('truetype');
 }
 @font-face
 {
@@ -12,7 +12,7 @@
   font-weight: 100;
   font-style: normal;
 
-  src: local('IBM Plex Serif Thin'), local('IBMPlexSerif-Thin'), url('IBMPlexSerif-Thin.ttf') format('truetype');
+  src: local('IBM Plex Serif Thin'), local('IBMPlexSerif-Thin'), url('../fonts/IBMPlexSerif-Thin.ttf') format('truetype');
 }
 @font-face
 {
@@ -20,7 +20,7 @@
   font-weight: 200;
   font-style: normal;
 
-  src: local('IBM Plex Sans ExtraLight'), local('IBMPlexSans-ExtraLight'), url('Ibmplexsansextralight.woff2') format('woff2'), url('Ibmplexsansextralight.woff') format('woff'), url('Ibmplexsansextralight.ttf') format('truetype');
+  src: local('IBM Plex Sans ExtraLight'), local('IBMPlexSans-ExtraLight'), url('../fonts/Ibmplexsansextralight.woff2') format('woff2'), url('../fonts/Ibmplexsansextralight.woff') format('woff'), url('../fonts/Ibmplexsansextralight.ttf') format('truetype');
 }
 @font-face
 {
@@ -28,7 +28,7 @@
   font-weight: 300;
   font-style: normal;
 
-  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'), url('Ibmplexsanslight.woff2') format('woff2'), url('Ibmplexsanslight.woff') format('woff'), url('Ibmplexsanslight.ttf') format('truetype');
+  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'), url('../fonts/Ibmplexsanslight.woff2') format('woff2'), url('../fonts/Ibmplexsanslight.woff') format('woff'), url('../fonts/Ibmplexsanslight.ttf') format('truetype');
 }
 @font-face
 {
@@ -36,7 +36,7 @@
   font-weight: 400;
   font-style: normal;
 
-  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('Ibmplexsans.woff2') format('woff2'), url('Ibmplexsans.woff') format('woff'), url('Ibmplexsans.ttf') format('truetype');
+  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('../fonts/Ibmplexsans.woff2') format('woff2'), url('../fonts/Ibmplexsans.woff') format('woff'), url('../fonts/Ibmplexsans.ttf') format('truetype');
 }
 @font-face
 {
@@ -44,7 +44,7 @@
   font-weight: 400;
   font-style: normal;
 
-  src: local('IBM Plex Serif Regular'), local('IBMPlexSerif-Regular'), url('IBMPlexSerif-Regular.ttf') format('truetype');
+  src: local('IBM Plex Serif Regular'), local('IBMPlexSerif-Regular'), url('../fonts/IBMPlexSerif-Regular.ttf') format('truetype');
 }
 @font-face
 {
@@ -52,7 +52,7 @@
   font-weight: 500;
   font-style: normal;
 
-  src: local('IBM Plex Serif Medium'), local('IBMPlexSerif-Medium'), url('IBMPlexSerif-Medium.ttf') format('truetype');
+  src: local('IBM Plex Serif Medium'), local('IBMPlexSerif-Medium'), url('../fonts/IBMPlexSerif-Medium.ttf') format('truetype');
 }
 @font-face
 {
@@ -60,7 +60,7 @@
   font-weight: 500;
   font-style: normal;
 
-  src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url('Ibmplexsansmedium.woff2') format('woff2'), url('Ibmplexsansmedium.woff') format('woff'), url('Ibmplexsansmedium.ttf') format('truetype');
+  src: local('IBM Plex Sans Medium'), local('IBMPlexSans-Medium'), url('../fonts/Ibmplexsansmedium.woff2') format('woff2'), url('../fonts/Ibmplexsansmedium.woff') format('woff'), url('../fonts/Ibmplexsansmedium.ttf') format('truetype');
 }
 @font-face
 {
@@ -68,7 +68,7 @@
   font-weight: 600;
   font-style: normal;
 
-  src: local('IBM Plex Sans SemiBold'), local('IBMPlexSans-SemiBold'), url('Ibmplexsanssemibold.woff2') format('woff2'), url('Ibmplexsanssemibold.woff') format('woff'), url('Ibmplexsanssemibold.ttf') format('truetype');
+  src: local('IBM Plex Sans SemiBold'), local('IBMPlexSans-SemiBold'), url('../fonts/Ibmplexsanssemibold.woff2') format('woff2'), url('../fonts/Ibmplexsanssemibold.woff') format('woff'), url('../fonts/Ibmplexsanssemibold.ttf') format('truetype');
 }
 @font-face
 {
@@ -76,5 +76,5 @@
   font-weight: 700;
   font-style: normal;
 
-  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url('Ibmplexsansbold.woff2') format('woff2'), url('Ibmplexsansbold.woff') format('woff'), url('Ibmplexsansbold.ttf') format('truetype');
+  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url('../fonts/Ibmplexsansbold.woff2') format('woff2'), url('../fonts/Ibmplexsansbold.woff') format('woff'), url('../fonts/Ibmplexsansbold.ttf') format('truetype');
 }
