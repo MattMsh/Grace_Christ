@@ -578,6 +578,7 @@ html {
     width: 100%;
     height: 100vh;
     min-height: 750px;
+    overflow-x: hidden;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -706,6 +707,8 @@ html {
     letter-spacing: 1px;
     line-height: 50px;
     transition: .2s ease-in-out background-color;
+    text-align: center;
+    
   }
 
   .blue-btn:hover {
@@ -1266,6 +1269,497 @@ html {
 
 /* About us end */
 
+/* Our events */
+  .our-events {
+    background-color: #032131;
+    background-image: url(../image/our-action/our-actions-bg.png);
+    background-repeat: no-repeat;
+    background-position: 93% 47px;
+
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .our-events h2 {
+    position: relative;
+    margin-bottom: 120px;
+    color: #02cbd8;
+    font-family: "IBM Plex Sans";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+
+  .our-events h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100px;
+    height: 1px;
+    background-color: #02cbd8;
+  }
+
+  .our-events-header-wrap {
+    margin-bottom: 155px;
+  }
+
+  .our-events-header {
+    padding-right: 137px;
+    margin-bottom: 30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .our-events-visit-us {
+    margin-top: -7px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: "IBM Plex Sans";
+    line-height: 1.3;
+  }
+
+  .our-events-visit-us span {
+    display: block;
+    color: #02cbd8;
+    font-weight: 600;
+  }
+
+  .our-events-description {
+    max-width: 490px;
+  }
+
+  .our-events-description p {
+    color: #ffffff;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .our-events-description p:not(:last-child) {
+    margin-bottom: 55px;
+  }
+
+  .our-events-description p.translucent {
+    color: rgba(255, 255, 255, .5);
+  }
+
+  button.write-us{
+    position: relative;
+    
+    padding-left: 2px;
+    padding-right: 30px;
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px solid #02cbd8;
+    height: 35px;
+    color: #fff;
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 14px;
+    cursor: pointer;
+    transition: .2s padding-right,
+                .4s color;
+  }
+  button.write-us::before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+  }
+  button.write-us::after {
+    content: '';
+    right: 2px;
+    top: 6px;
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right: 2px solid #02cbd8;
+    border-bottom: 2px solid #02cbd8;
+    transform: rotate(-45deg);
+  }
+
+  button.write-us:hover {
+    padding-right: 40px;
+  }
+
+  .scheduled-meetings-wrap {
+    overflow-x: hidden;
+  }
+
+  .scheduled-meetings-info,
+  .scheduled-meetings-slider {
+    padding-top: 110px;
+  }
+
+
+  .scheduled-meetings {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .scheduled-meetings-info h3 {
+    margin-bottom: 95px;
+    max-width: 240px;
+    color: #ffffff;
+    font-family: "IBM Plex Sans";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+  }
+
+  .scheduled-meetings-info .blue-btn {
+    margin-bottom: 80px;
+  }
+
+  .scheduled-meetings-slider-wrap {
+    position: relative;
+    padding-left: 60px;
+    max-width: 1270px;
+    z-index: 0;
+  }
+
+  .scheduled-meetings-slider-wrap::after {
+    content: "";
+    width: 110%;
+    height: calc(100% - 110px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    border-radius: 5px;
+  }
+
+  .scheduled-meetings-slider {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .scheduled-meetings-slider .slick-track {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+
+  .scheduled-meetings-slider .slick-track .slick-slide:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  .scheduled-meetings-slide {
+    padding-top: 110px;
+    padding-bottom: 65px;
+    position: relative;
+    min-height: 400px;
+    transition: .4s;
+  }
+
+  .scheduled-meetings-slide img {
+    position: absolute;
+    transform: translateY(calc(-50% - 100px));
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    user-select: none;
+    transition: .4s;
+  }
+
+  .scheduled-meetings-slide-content {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .scheduled-meetings-slide-content p {
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, .7);
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  .scheduled-meetings-numbers {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .scheduled-meetings-numbers span:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .scheduled-meetings-date,
+  .scheduled-meetings-time {
+    display: flex;
+    align-items: center;
+    color: #010101;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .scheduled-meetings-date::before {
+    margin-right: 16px;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 16px;
+
+    background-image: url(../image/icons/calendar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .scheduled-meetings-time::before {
+    margin-right: 16px;
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+
+    background-image: url(../image/icons/clock.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .scheduled-meetings-slide-content .write-us {
+    display: block;
+    
+    color: #000;
+  }
+
+  .scheduled-meetings-name {
+    margin-bottom: 45px;
+    display: block;
+    color: #000000;
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .scheduled-meetings-slider .scheduled-meetings-slide:hover{
+    background-color: #032131;
+  }
+
+  .scheduled-meetings-slider .scheduled-meetings-slide:hover img {
+    transform: translateY(calc(-50% - 110px));
+  } 
+
+  .scheduled-meetings-slider .scheduled-meetings-slide .scheduled-meetings-slide-content p,
+  .scheduled-meetings-slider .scheduled-meetings-slide .scheduled-meetings-numbers span,
+  .scheduled-meetings-slider .scheduled-meetings-slide .scheduled-meetings-name
+  {
+    transition: .4s;
+  }
+
+  .scheduled-meetings-slider .scheduled-meetings-slide:hover .scheduled-meetings-slide-content p,
+  .scheduled-meetings-slider .scheduled-meetings-slide:hover .scheduled-meetings-numbers span,
+  .scheduled-meetings-slider .scheduled-meetings-slide:hover .scheduled-meetings-name,
+  .scheduled-meetings-slider .scheduled-meetings-slide:hover .write-us
+  {
+    color: #fff;
+  }
+
+  .our-events .slick-arrow {
+    position: relative;
+    
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .2);
+    font-size: 0;
+
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .our-events .slick-arrow:hover {
+    background: rgba(255, 255, 255, .4)
+  }
+
+  .our-events .slick-arrow.slick-disabled {
+    background: none;
+  }
+
+  .our-events .slick-prev {
+    margin-right: 40px;
+  }
+
+  .our-events .slick-arrow::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+
+  .our-events .slick-next::after {
+    left: 50%;
+    transform: rotate(-135deg) translate(85%,-15%);
+  }
+
+  .our-events .slick-prev::after {
+    right: 50%;
+    transform: rotate(45deg) translate(15%, -85%);
+  }
+
+  .scheduled-meetings-slider-dots ul{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .scheduled-meetings-slider-dots ul li {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    background: none;
+    border-radius: 50%;
+  }
+
+  .scheduled-meetings-slider-dots ul li button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 0;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  .scheduled-meetings-slider-dots ul li button::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .2); 
+    border-radius: 50%;
+    transition: .2s;
+  }
+
+  .scheduled-meetings-slider-dots ul li.slick-active button {
+    border: 1px solid rgba(255, 255, 255, .2);
+  }
+
+  .scheduled-meetings-slider-dots ul li.slick-active button::after {
+    background-color: #e72b45;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .our-events-header-wrap {
+      margin-bottom: 120px;
+    }
+    .our-events-header {
+      padding-right: 0;
+    }
+    .our-events h2 {
+      margin-bottom: 80px;
+      font-size: 40px;
+      line-height: 1;
+    }
+    .our-events h2::after {
+      bottom: -15px;
+      width: 70px;
+      height: 1px;
+    }
+    .scheduled-meetings-slider-wrap {
+      max-width: 600px;
+      padding-left: 15px;
+    }
+    .scheduled-meetings-slider-wrap::after {
+      width: 125%;
+    }
+    .scheduled-meetings-slider .slick-track .slick-slide {
+      padding: 0 15px;
+    }
+    .scheduled-meetings-slider .slick-track .slick-slide:not(:first-child) {
+      margin-left: 0;
+    }
+    .scheduled-meetings-slide-content {
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .scheduled-meetings-name {
+      font-size: 18px;
+    }
+    .our-events-visit-us {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    .our-events-description {
+      max-width: 400px;
+    }
+    .our-events-description p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .our-events {
+      background-image: url();
+    }
+    .scheduled-meetings-info {
+      display: none;
+    }
+    .scheduled-meetings-slider-wrap::after {
+      width: 100%;
+    }
+    .scheduled-meetings-slider-wrap {
+      padding-right: 15px;
+      max-width: 100%;
+    }
+    .scheduled-meetings-wrap .container {
+      max-width: 100%;
+    }
+    .scheduled-meetings {
+      margin-bottom: 30px;
+    }
+  }
+
+  
+/* Our events end */
+
 
 /* Main end */
 
@@ -1275,113 +1769,48 @@ html {
     /* Containers */
       .container
       {
-        width: 100%;
         max-width: 106.25rem;
-        margin: 0 auto;
         padding: 0 1.25rem;
       }
 
     /* Header */
 
       header {
-        position: absolute;
-        top: 0;
-        left: 0;
         height: 10rem;
-
         margin-top: 1.875rem;
-        width: 100%;
-
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        z-index: 999;
       }
 
       .header-wrap {
         max-width: 107.5rem;
         padding: 0 5rem;
-        margin: 0 auto;
-
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: flex-end;
       }
 
       .menu {
-        position: absolute;
         top: -1.875rem;
-        left: 0;
         padding: 4.4375rem 8.125rem 0;
-        
         width: 56.25rem;
         height: 34.375rem;
-        background-color: transparent;
-
-        transition: all .2s ease-in-out;
-        transform: translateX(-100%);
-      }
-
-      .menu.active {
-        background-color: #fff;
-        transform: translateX(0);
-      }
-
-      .menu-burger.active span,
-      .menu-burger.active span::before,
-      .menu-burger.active span::after{
-        background-color: #000; 
       }
 
       .menu-burger {
-        position: absolute;
-        
         top: 2.6875rem;
         left: 8.125rem;
-        cursor: pointer;
         width: 1.9375rem;
-        height: 1.3125rem; 
-        z-index: 2;
-        overflow: hidden;
-        transition: .2s ease-out transform;
+        height: 1.3125rem;
       }
 
       .menu-burger span {
-        position: relative;
-        
-        display: block;
         width: 1.875rem;
-        height: 2px;
-        background: #fff;
-        transition: all .2s ease-in-out;
       }
 
       .menu-burger span::after {
-        content: "";
-        position: absolute;
         top: 0.625rem;
-        left: 0;
-        
-        display: block;
         width: 1.25rem;
-        height: 2px;
-        background: #fff;
-        transition: .2s ease-in-out;
       }
 
       .menu-burger:hover span {
-        background-color: #02cbd88a;
         transform: translateX(-0.3125rem);
       }
-
-      .menu-burger:hover span::after {
-        background-color: #02cbd88a;
-      }
-
       .menu-burger.active {
         width: 1.3125rem;
         height: 1.3125rem;
@@ -1395,7 +1824,6 @@ html {
 
       .menu-burger.active span::after {
         transform: translateY(-0.625rem) rotate(-90deg);
-        
       }
 
       .header-phone {
@@ -1404,49 +1832,21 @@ html {
       }
 
       .header-phone a {
-        color: #ffffff;
-        font-family: 'IBM Plex Sans';
         font-size: 1.25rem;
-        font-weight: 500;
         line-height: 1.125rem;
-        text-transform: uppercase;
-        transition: .25s ease-in color;
       }
-
-      .header-phone a:hover {
-        color: #02cbd8;
-      }
-
       .menu-header {
         margin-bottom: 5rem;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: flex-end;
         padding-bottom: 3.9375rem;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
       }
 
       .lang-switcher {
-        position: relative;
         padding-right: 1.25rem;
       }
 
       .lang-switcher ul {
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        
         top: 1.25rem;
-        width: 100%;
-        font-weight: 500;
-        background-color: #fff;
         transform: translateY(-1.875rem) scaleY(.5);
-        transition: .2s linear opacity,
-                    .2s linear transform,
-                    .25s linear visibility;
       }
 
       .lang-switcher ul li {
@@ -1454,130 +1854,28 @@ html {
       }
 
       .lang-switcher span{
-        position: relative;
-        color: #000000;
-
         font-size: 1.25rem;
-        font-weight: 500;
         line-height: 0.875rem;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: .4s ease-out color;
-      }
-
-      .lang-switcher span:hover {
-        color: #02cbd8;
-      }
-
-      .lang-switcher span.main-lang:hover::after {
-        border-color: #02cbd8;
       }
 
       .lang-switcher span.main-lang::after {
-        position: absolute;
         top: calc(50% - 0.3125rem);
-        right: -20px;
-        content: "";
-        display: block;
         width: 0.4375rem;
         height: 0.4375rem;
-        border-left: 2px solid #000;
-        border-bottom: 2px solid #000;
-        transform: rotate(-45deg);
-        transition: .2s linear transform,
-                    .5s linear border-color;
-        transform-origin: 50% 70%; 
       }
-
-      .lang-switcher.active .main-lang {
-        color: #02cbd8;
-      }
-      
-      .lang-switcher.active .main-lang::after {
-        transform: rotate(135deg);
-        border-color: #02cbd8;
-      }
-
-      .lang-switcher.active ul {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0) scaleY(1);
-      }
-
       .menu-main {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
         max-height: 14.375rem;
       }
-
-      .menu-main ul {
-        width: 40%;
-        height: 100%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
       .menu-main > ul > li > a {
         font-size: 1.25rem;
-        font-weight: 500;
         line-height: 0.875rem;
-        text-transform: uppercase;
-        transition: .1s linear color;
       }
-
-      .menu-main > ul > li > a:hover {
-        color: #11cfdc;
-      }
-
-      .header-phone-menu {
-        display: none;
-      }
-
-      .social {
-        height: 100%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        align-items: center;
-      }
-
       .social ul {
-        height: 100%;
-        width: 100%;
         max-width: 1.875rem;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
       }
 
       .social ul li:not(:last-child) {
         margin-bottom: 1.875rem;
-      }
-
-      .social ul li svg {
-        transition: .3s ease-in-out opacity;
-      }
-      
-      .social ul li:hover a svg {
-        opacity: .4;
       }
 
     /* Header end */
@@ -1585,50 +1883,17 @@ html {
     /* Main */
       
     /* Intro */
-      section.intro-page {
-        width: 100%;
-        height: 100vh;
-
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-
-      .carousel.intro {
-        position: relative;
-        
-        width: 100vw;
-        height: 100vh;
-      }
-      
-      .carousel.intro .slick-list {
-        width: 100%;
-        height: 100%;
-      }
       .carousel.intro .slick-arrow {
-        position: absolute;
         top: calc(50% - 0.75rem);
         width: 3.375rem;
         height: 3.375rem;
-        border: 1px solid rgba(255, 255, 255, .2);
-        background: none;
-        font-size: 0;
-
-        z-index: 5;  
-        cursor: pointer;
       }
 
       .carousel.intro .slick-arrow::after {
-        position: absolute;
-        content: "";
         left: calc(50% - 0.3125rem);
         top: calc(50% - 0.4375rem);
-
         width: 0.875rem;
         height: 0.875rem;
-        border-bottom: 2px solid #fff;
-        border-left: 2px solid #fff;
-        transform: rotate(45deg);
       }
 
       .carousel.intro .slick-next {
@@ -1637,201 +1902,72 @@ html {
 
       .carousel.intro .slick-next::after {
         left: calc(50% - 0.5625rem);
-        transform: rotate(-135deg);
       }
 
       .carousel.intro .slick-prev {
         left: 8.125rem;  
       }
-
-      .carousel.intro .slick-disabled {
-        opacity: .5;
-      }
-
-      .carousel.intro .slick-track {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        height: 100vh;
-      }
-
-      .carousel.intro .slick-slide {
-        height: 100vh;
-      }
-
-      .custom-slide {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 20%;
-      }
-
       .custom-slide .custom-slide-content {
         margin-top: 16.25rem;
-        text-align: center;
-        
       }
 
       .custom-slide .custom-slide-content h1 {
-        color: #ffffff;
         line-height: 8.4375rem;
-        font-family: "IBM Plex Serif";
         font-size: 9.375rem;
-        font-weight: 100;
         margin-bottom: 4.375rem;
       }
 
       .custom-slide .custom-slide-content p {
-        opacity: 0.6;
-        color: #ffffff;
         line-height: 1.75rem;
         font-size: 1.875rem;
-        font-weight: 300;
         margin-bottom: 6.25rem;
       }
 
       .blue-btn {
-        position: relative;
-        display: inline-block;
-        
-        width: 100%;
         max-width: 13.75rem;
         height: 3.125rem;
-        background-color: #02cbd8;
-
-        color: #ffffff;
         font-size: 1.25rem;
-        font-weight: 500;
-        letter-spacing: 1px ;
         line-height: 3.125rem;
-        transition: .2s ease-in-out background-color;
       }
-
-      .blue-btn:hover {
-        background-color: #02acd8;
-      }
-
       .blue-btn::after {
-        position: absolute;
         left: -0.5rem;
-        top: calc(50% - 0.5px);
-        content: "";
-
         width: 2.5rem;
-        height: 1px;
-        background-color: #fff;
-        transition: .2s ease-in-out transform;
       }
 
       .blue-btn:hover::after {
         transform: translateX(-0.625rem);
-      }
-
-      .carousel.nav {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        background-color: #123456;
-      }
-
+      }   
       .carousel.nav .slick-dots {
-        position: absolute;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
         bottom: 8.125rem;
         left: calc(50vw - 14.0625rem);
         width: 28.125rem;
-        height: 2px;
+        height: 0.125rem;
       }
 
       .carousel.nav .slick-dots li[role="presentation"] {
-        position: relative;
-        
         width: calc(28.125rem / 3);
-        height: 2px;
-        background: none;
-        border: none;
-        padding: 0;
-      }
-
-      .carousel.nav .slick-dots li[role="presentation"] button {
-        position: absolute;
-        
-        width: 100%; 
-        height: 100%;
-        padding: 0;
-        background: rgba(255, 255, 255, .2);
-        border: none;
-        border-top: 1px solid transparent;
-        font-size: 0;
-
-        transition: 1s border-color ease-in-out,
-                    1s background-color ease-in-out;
-      }
-
-      .carousel.nav .slick-dots li.slick-active button {
-        border-top-color: #fff;
-        background-color: #fff;
+        height: 0.125rem;
       }
 
       .carousel.nav .slick-dots li[role="presentation"] button::after {
-        position: absolute;
-        color: rgba(255, 255, 255, .7);
         font-size: 1.25rem;
-        font-family: 'IBM Plex Sans';
-        font-weight: 400;
         line-height: 0.875rem;
-
-        cursor: pointer;
-        
-        transition: all 1s ease-in-out;
       }
-
-      .carousel.nav .slick-dots li.slick-active button::after {
-        color: #fff;
-      }
-
       .carousel.nav .slick-dots li[role="presentation"]:nth-of-type(1) button::after {
-        content: "01";
         left: -4.2031rem;
         top: -0.4688rem;
       }
 
       .carousel.nav .slick-dots li[role="presentation"]:nth-of-type(2) button::after {
-        content: "02";
-        visibility: hidden;
         left: calc(50% - 0.6953rem);
         top: 0.3125rem;
-        opacity: 0;
       }
 
       .carousel.nav .slick-dots li.slick-active:nth-of-type(2) button::after {
-        content: "02";
-        visibility: visible;
         transform: translateY(0.3125rem);
-        opacity: 1; 
       }
 
       .carousel.nav .slick-dots li[role="presentation"]:nth-of-type(3) button::after {
-        content: "03";
         right: -4.2031rem;
         top: -0.4688rem;
       } 
@@ -1843,11 +1979,8 @@ html {
       }
 
       .about-us-header {
-        display: flex;
-        position: relative;
         padding-left: 9.0625rem;
         margin-bottom: 2.1875rem;
-        justify-content: space-between;
       }
 
       .about-us-description {
@@ -1856,77 +1989,30 @@ html {
       }
 
       .about-us-description h2 {
-        position: relative;
-        color: #02cbd8;
         font-size: 3.75rem;
-        font-weight: 700;
         line-height: 3.125rem;
-        text-transform: uppercase;
         letter-spacing: 0.3rem;
         margin-bottom: 7.5rem;
       }
 
       .about-us-description h2::after {
-        position: absolute;
         bottom: -1.3125rem;
-        left: 1px ;
-        content:'';
         width: 6.25rem;
-        height: 1px ;
-        background-color: #02cbd8;
       }
 
       .about-us-description p {
         max-width: 46.25rem;
-        color: #000000;
         font-size: 1.75rem;
-        font-weight: 500;
         line-height: 2.625rem;
       }
-
-      .about-us-social {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
       .about-us-social ul {
-        height: 100%;
-        width: 100%; 
         max-width: 1.875rem;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
       }
 
       .about-us-social ul li:not(:last-child) {
         margin-bottom: 1.875rem;
       }
-
-      .about-us-social ul li a {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        
-      }
-      .about-us-social ul li a svg {
-        transition: .3s;
-      }
-
-      .about-us-social ul li a:hover svg{
-        opacity: .4;
-      }
-
       .about-us-header-photo {
-        display: flex;
         padding-left: 3.125rem;
         padding-bottom: 3.125rem;
       }
@@ -1934,29 +2020,15 @@ html {
       .about-us-header-photo img {
         box-shadow: -3.125rem 3.125rem 0 #eaeaea;
       }
-
-      .about-us-second-block {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: space-between;
-      }
-
       .about-us-verse-and-img {
-        position: relative;
         padding: 35.625rem 5rem 4.375rem 5rem;
         margin-right: 23.125rem;
-        width: 100%;
         max-width: 32.5rem;
         min-height: 56.875rem;
         border-radius: 0 0.3125rem 0.3125rem 0;
-        background-color: #032131;
       }
 
       .about-us-img-wrap {
-        position: absolute;
         top: 4.375rem;
         left: 4.375rem;
         width: 51.25rem;
@@ -1966,37 +2038,22 @@ html {
       .about-us-verse p {
         margin-top: 3.75rem;
         margin-bottom: 2.5rem;
-        color: #ffffff;
-        font-family: "IBM Plex Serif";
         font-size: 2.25rem;
-        font-weight: 400;
         line-height: 2.5rem;
       }
 
       .about-us-verse span {
-        position: relative;
         padding-left: 3.75rem;
-        color: #02cbd8;
-        font-family: "IBM Plex Sans";
         font-size: 1.5rem;
-        font-weight: 400;
         line-height: 2.5rem;
       }
 
       .about-us-verse span::after {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        content: "";
         width: 2.5rem;
-        height: 1px ;
-        background-color: #02cbd8;
       }
 
       .about-us-our-vision {
         max-width: 41.875rem;
-        width: 100%;
         padding-left: 3.125rem;
         padding-right: 7.5rem;
         padding-top: 13.125rem;
@@ -2004,9 +2061,7 @@ html {
 
       .about-us-our-vision h3 {
         margin-bottom: 4.6875rem;
-        font-family: "IBM Plex Sans";
         font-size: 2.5rem;
-        font-weight: 500;
         line-height: 1.875rem;
       }
 
@@ -2015,13 +2070,181 @@ html {
       }
 
       .about-us-our-vision p {
-        opacity: 0.8;
-        font-family: "IBM Plex Sans";
         font-size: 1.125rem;
-        font-weight: 400;
         line-height: 1.875rem;
       }
     /* About us end */
+    /* Our events */
+      .our-events {
+        background-position: 93% 2.9375rem;
+
+        padding-top: 6.25rem;
+        padding-bottom: 5rem;
+      }
+
+      .our-events h2 {
+        margin-bottom: 7.5rem;
+        font-size: 3.75rem;
+        line-height: 3.125rem;
+        letter-spacing: 0.375rem;
+      }
+
+      .our-events h2::after {
+        bottom: -1.5625rem;
+        width: 6.25rem;
+      }
+
+      .our-events-header-wrap {
+        margin-bottom: 9.6875rem;
+      }
+
+      .our-events-header {
+        padding-right: 8.5625rem;
+        margin-bottom: 1.875rem;
+      }
+
+      .our-events-visit-us {
+        margin-top: -0.4375rem;
+        font-size: 3rem;
+      }
+      .our-events-description {
+        max-width: 30.625rem;
+      }
+
+      .our-events-description p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .our-events-description p:not(:last-child) {
+        margin-bottom: 3.4375rem;
+      }
+      button.write-us{
+        padding-left: 0.125rem;
+        padding-right: 1.875rem;
+        border-bottom: 0.125rem solid #02cbd8;
+        height: 2.1875rem;
+        font-size: 1.25rem;
+        line-height: 0.875rem;
+      }
+      button.write-us::after {
+        right: 0.125rem;
+        top: 0.375rem;
+        width: 0.375rem;
+        height: 0.375rem;
+        border-right: 0.125rem solid #02cbd8;
+        border-bottom: 0.125rem solid #02cbd8;
+      }
+
+      button.write-us:hover {
+        padding-right: 2.5rem;
+      }
+
+      .scheduled-meetings-info,
+      .scheduled-meetings-slider {
+        padding-top: 6.875rem;
+      }
+
+      .scheduled-meetings-info h3 {
+        margin-bottom: 5.9375rem;
+        max-width: 15rem;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+      }
+
+      .scheduled-meetings-info .blue-btn {
+        margin-bottom: 5rem;
+      }
+
+      .scheduled-meetings-slider-wrap {
+        padding-left: 3.75rem;
+      }
+
+      .scheduled-meetings-slider-wrap::after {
+        height: calc(100% - 6.875rem);
+        border-radius: 0.3125rem 0 0 0.3125rem;
+      }
+
+      .scheduled-meetings-slider {
+        max-width: 79.375rem;
+      }
+
+      .scheduled-meetings-slider .slick-track .slick-slide:not(:first-child) {
+        margin-left: 3.125rem;
+      }
+
+      .scheduled-meetings-slide {
+        padding-top: 6.875rem;
+        padding-bottom: 4.0625rem;
+        min-height: 25rem;
+      }
+
+      .scheduled-meetings-slide img {
+        transform: translateY(calc(-50% - 6.25rem));
+      }
+
+      .scheduled-meetings-slide-content {
+        padding-top: 2.5rem;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+      }
+
+      .scheduled-meetings-slide-content p {
+        margin-bottom: 1.875rem;
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
+
+      .scheduled-meetings-numbers {
+        margin-bottom: 1.5625rem;
+      }
+
+      .scheduled-meetings-numbers span:not(:last-child) {
+        margin-right: 1.875rem;
+      }
+
+      .scheduled-meetings-date,
+      .scheduled-meetings-time {
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+      }
+
+      .scheduled-meetings-date::before {
+        margin-right: 1rem;
+        width: 1.25rem;
+        height: 1rem;
+      }
+
+      .scheduled-meetings-time::before {
+        margin-right: 1rem;
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+
+      .scheduled-meetings-name {
+        margin-bottom: 2.8125rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .scheduled-meetings-slider .scheduled-meetings-slide:hover img {
+        transform: translateY(calc(-50% - 6.875rem));
+      } 
+
+      .our-events .slick-arrow {
+        width: 3.375rem;
+        height: 3.375rem;
+      }
+
+      .our-events .slick-prev {
+        margin-right: 2.5rem;
+      }
+
+      .our-events .slick-arrow::after {
+        width: 0.875rem;
+        height: 0.875rem;
+        border-bottom: 0.125rem solid #fff;
+        border-left: 0.125rem solid #fff;
+      }
+    /* Our events end */
   }
 
 /* rem styles */

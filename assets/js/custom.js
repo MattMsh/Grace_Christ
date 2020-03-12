@@ -40,4 +40,27 @@ jQuery(document).ready(function($){
     arrows: false,
     dots: true
   });
+
+  $('.scheduled-meetings-slider').slick({
+    infinite: false,
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows: $('.scheduled-meetings-arrows'),
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        dots: true,
+        appendDots: $('.scheduled-meetings-slider-dots')
+      }
+    }]
+  });
 })
