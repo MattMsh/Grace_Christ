@@ -49,6 +49,7 @@ jQuery(document).ready(function($){
     slidesToShow: 3,
     slidesToScroll: 1,
     appendArrows: $('.scheduled-meetings-arrows'),
+    appendDots: $('.scheduled-meetings-slider-dots'),
     responsive: [{
       breakpoint: 1200,
       settings: {
@@ -59,8 +60,21 @@ jQuery(document).ready(function($){
       settings: {
         slidesToShow: 3,
         slidesToScroll: 2,
-        dots: true,
-        appendDots: $('.scheduled-meetings-slider-dots')
+        dots: true
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true
+      }
+    }, {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
       }
     }]
   });

@@ -1547,6 +1547,13 @@ html {
   }
 
   .scheduled-meetings-slide {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-top: 110px;
     padding-bottom: 65px;
     position: relative;
@@ -1632,7 +1639,6 @@ html {
 
   .scheduled-meetings-slide-content .write-us {
     display: block;
-    
     color: #000;
   }
 
@@ -1721,6 +1727,7 @@ html {
     display: -o-flex;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .scheduled-meetings-slider-dots ul li {
@@ -1763,6 +1770,25 @@ html {
 
   .scheduled-meetings-slider-dots ul li.slick-active button::after {
     background-color: #e72b45;
+  }
+
+  .scheduled-meetings > h3,
+  .scheduled-meetings-wrap .container > .blue-btn {
+    visibility: hidden;
+  }
+
+  .scheduled-meetings-wrap .container > .blue-btn {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .scheduled-meetings > h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-family: "IBM Plex Sans";
+    font-size: 24px;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 1199px) {
@@ -1834,7 +1860,177 @@ html {
       max-width: 100%;
     }
     .scheduled-meetings {
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+    .scheduled-meetings-slide-content {
+      padding-top: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .scheduled-meetings-slide {
+      padding-top: 80px;
+    }
+    .scheduled-meetings-slider .scheduled-meetings-slide:hover img {
+      transform: translateY(calc(-50% - 90px));
+    }
+    .scheduled-meetings-slider .scheduled-meetings-slide img {
+      transform: translateY(calc(-50% - 80px));
+    }
+    .scheduled-meetings-slider {
+      padding-top: 80px;
+    }
+    .scheduled-meetings-slider-wrap::after {
+      height: calc(100% - 80px);
+    } 
+    .scheduled-meetings-slide-content p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+    .scheduled-meetings-date, .scheduled-meetings-time {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .scheduled-meetings-date::before {
+      margin-right: 8px;
+    }
+    .scheduled-meetings-time::before {
+      margin-right: 8px;
+    }
+    .scheduled-meetings-numbers span:not(:last-child) {
+      margin-right: 20px;
+    }
+    button.write-us {
+      font-size: 18px;
+      padding-right: 20px;
+      height: 28px;
+    }
+    .scheduled-meetings > h3,
+    .scheduled-meetings-wrap .container > .blue-btn {
+      visibility: visible;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .our-events {
+      padding: 30px 0 60px;
+    }
+    .our-events-header {
+      flex-direction: column;
+    }
+    .our-events-visit-us {
+      margin-bottom: 40px;
+    }
+    .our-events h2 {
+      margin-bottom: 50px;
+      font-size: 30px;
+      line-height: 33px;
+      letter-spacing: 2.4px;
+    }
+    .our-events h2::after {
+      bottom: -10px;
+      width: 40px;
+    }
+    .our-events-description {
       margin-bottom: 30px;
+    }
+    .our-events-description p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .our-events-description p:not(:last-child)  {
+      margin-bottom: 20px;
+    }
+    .our-events-visit-us p {
+      max-width: 90%;
+    }
+    .our-events-visit-us span {
+      margin-top: 15px;
+    }
+    .scheduled-meetings-slider {
+      padding-top: 110px;
+    }
+    .scheduled-meetings-slider-wrap::after {
+      height: calc(100% - 110px);
+    }
+    .scheduled-meetings-slide {
+      padding-top: 110px;
+    }
+    .scheduled-meetings-slider .scheduled-meetings-slide img {
+      transform: translateY(calc(-50% - 110px));
+    }
+
+    .scheduled-meetings-slider .scheduled-meetings-slide:hover img {
+      transform: translateY(calc(-50% - 120px));
+    }
+    .our-events-header-wrap {
+      margin-bottom: 70px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .scheduled-meetings-slider {
+      padding-top: 75px;
+    }
+    .scheduled-meetings-slider-wrap::after {
+      display: none;
+    }
+    .scheduled-meetings-slider .scheduled-meetings-slide img {
+      max-width: calc(100% - 30px);
+      top: 110px;
+      left: 50%;
+      transform: translate(-50%, calc(-50% - 110px));
+    }
+    .scheduled-meetings-slider .scheduled-meetings-slide:hover img {
+      transform: translate(-50%, calc(-50% - 110px));
+    }
+    .scheduled-meetings-wrap .scheduled-meetings .scheduled-meetings-slider-wrap .scheduled-meetings-slider .scheduled-meetings-slide:hover * {
+      color: inherit;  
+    }
+    .scheduled-meetings-slider .scheduled-meetings-slide:hover {
+      background-color: #fff;
+    }
+    .scheduled-meetings-slider-wrap {
+      max-width: 310px;
+      padding: 0;
+    }
+    .scheduled-meetings {
+      align-items: center;
+    } 
+    .scheduled-meetings-slide {
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+    .scheduled-meetings-slider .slick-track .slick-slide {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .scheduled-meetings > h3 {
+      margin-bottom: 25px;
+    }
+    .scheduled-meetings-slide {
+      padding-bottom: 40px;
+    }
+    .scheduled-meetings-date, .scheduled-meetings-time
+    {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .scheduled-meetings-numbers {
+      justify-content: center;
+    }
+    .scheduled-meetings-slide-content {
+      text-align: center;
+    }
+    .scheduled-meetings-slide-content .write-us  {
+      margin: 0 auto;
     }
   }
 
