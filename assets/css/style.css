@@ -621,9 +621,11 @@ html {
     
       .menu-main > ul > li {
         text-align: center;
+        margin: 15px 0;
       }
     
       .social {
+        margin-bottom: 20px;
         max-height: 30px;
         height: 100%;
         width: 100%;
@@ -638,6 +640,10 @@ html {
     
       .menu-main .social ul li {
         margin-bottom: 0;
+      }
+
+      .menu-header {
+        margin-bottom: 50px;
       }
     
     }
@@ -2262,7 +2268,24 @@ html {
     }
     .our-event-slider-cards-item {
       display: block;
-      
+    }
+    .our-event-main_card {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      min-width: 0;
+      max-width: 385px;
+    }
+    .our-event-slider_cards {
+      margin-right: 0;
+      padding-left: 0;
+    }
+    .our-event-slider_cards .slick-track .slick-slide {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
     }
   }
 
