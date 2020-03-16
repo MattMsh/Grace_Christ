@@ -640,11 +640,6 @@ html {
         margin-bottom: 0;
       }
     
-      .lang-switcher ul li {
-        text-align: center;
-        
-      }
-    
     }
 
 /* Header end */
@@ -2354,8 +2349,8 @@ html {
     display: -o-flex;
     display: flex;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
     height: 370px;
     padding: 90px 150px 85px;
     background-color: #fff;
@@ -2402,13 +2397,6 @@ html {
 
   .com-miniblock-second {
     max-width: 500px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   .com-miniblock-second h6 {
@@ -2422,6 +2410,7 @@ html {
     color: rgba(0, 0, 0, .78);
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 38px;
   }
 
   .com-miniblock-second .write-us {
