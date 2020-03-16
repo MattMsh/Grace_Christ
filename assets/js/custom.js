@@ -78,4 +78,47 @@ jQuery(document).ready(function($){
       }
     }]
   });
-})
+
+  const responsiveSettings = [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+  ]
+
+  $('.our-event-slider_cards-1').slick({
+    infinite: false,
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows: $('.our-event-slider-arrows-1'),
+    responsive: responsiveSettings
+  });
+  $('.our-event-slider_cards-2').slick({
+    infinite: false,
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows: $('.our-event-slider-arrows-2'),
+    responsive: responsiveSettings
+  });
+});

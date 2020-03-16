@@ -1,4 +1,4 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 @font-face
 {
   font-family: 'IBM Plex Sans';
@@ -1353,12 +1353,12 @@ html {
 /* Our events */
   .our-events {
     background-color: #032131;
-    background-image: url(../image/our-action/our-actions-bg.png);
+    background-image: url(../image/our-action/our-actions-bg.svg);
     background-repeat: no-repeat;
     background-position: 93% 47px;
 
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 
   .our-events h2 {
@@ -1478,6 +1478,7 @@ html {
 
   .scheduled-meetings-wrap {
     overflow-x: hidden;
+    margin-bottom: 120px;
   }
 
   .scheduled-meetings-info,
@@ -1618,7 +1619,7 @@ html {
     width: 20px;
     height: 16px;
 
-    background-image: url(../image/icons/calendar.png);
+    background-image: url(../image/icons/calendar.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1631,7 +1632,7 @@ html {
     width: 18px;
     height: 18px;
 
-    background-image: url(../image/icons/clock.png);
+    background-image: url(../image/icons/clock.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1774,12 +1775,7 @@ html {
 
   .scheduled-meetings > h3,
   .scheduled-meetings-wrap .container > .blue-btn {
-    visibility: hidden;
-  }
-
-  .scheduled-meetings-wrap .container > .blue-btn {
-    margin: 0 auto;
-    display: block;
+    display: none;
   }
 
   .scheduled-meetings > h3 {
@@ -1791,6 +1787,265 @@ html {
     font-weight: 500;
   }
 
+  .our-event-slider-cards-item {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 30px 0;
+  }
+  .our-event-slider-arrows {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+  .our-event-main_card {
+    min-width: 430px;
+    max-width: 430px;
+    min-height: 600px;
+    padding: 50px 60px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .our-event-main_card .our-event-svg_wrap svg {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .our-event-svg_wrap {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .our-event-card_name {
+    margin-bottom: 45px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    color: #010101;
+    font-family: "IBM Plex Sans";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .our-event-card_name::after {
+    content: "";
+    margin-left: 20px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #e72b45;
+  }
+
+  .our-event-card-contacts_item {
+    padding-left: 3px;
+  }
+
+  .our-event-card-contacts_item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .our-event-card-contacts_item a {
+    padding-left: 45px;
+    position: relative; 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .our-event-card-contacts_item a svg {
+    max-width: 1.5rem!important;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+  }
+
+  .our-event-card-contacts_item a span {
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    word-break: break-word;
+  }
+
+  .our-event-card-contacts {
+    position: relative;
+    padding-bottom: 40px;
+    padding-right: 60px;
+  }
+
+  .our-event-card-contacts::after {
+    position: absolute;
+    bottom: 0;  
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e72b45;
+  }
+  .view_on_map {
+    max-width: 210px;
+    margin-top: 30px;
+    position: relative;
+    display: block;
+    padding-right: 30px;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  .view_on_map::after {
+    content: '';
+    right: 2px;
+    top: 50%;
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right: 2px solid #e72b45;
+    border-bottom: 2px solid #e72b45;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+
+  .our-event-slider_cards {
+    width: 100%;
+    margin-right: -8px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 10px; 
+    overflow: hidden;
+  }
+
+  .our-event-slider_cards .slick-list {
+    width: 100%;
+  }
+
+  .our-event-slider_cards .slick-track {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;  
+  }
+
+  .our-event-slider_cards .slick-track .slick-slide {
+    margin: 0 10px;
+  }
+
+  .our-event-card-slide {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    max-width: 390px;
+    padding: 60px 50px;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 5px;
+    text-align: center;
+    overflow-y: auto;
+  }
+
+  .our-event-card-slide .our-event-svg_wrap {
+    margin-bottom: 60px;
+  }
+
+  .our-event-card-slide .our-event-svg_wrap svg {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .our-event-card-slide-name {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: "IBM Plex Sans";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .our-event-card-slide-time {
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 13px;
+  }
+
+  .our-event-card-slide-description {
+    min-width: 290px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, .8);
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    word-break: break-word;
+  }
+
+  .our-event-card-slide-day {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+
+    color: #02cbd8;
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .our-event-slider-cards-item.disabled .our-event-main_card {
+    background-color: #0e4c63;
+    background-image: -webkit-linear-gradient(312deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(312deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(42deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .our-event-slider-cards-item.disabled .our-event-main_card .our-event-card_name {
+    color: #fff;
+    margin-bottom: 70px;
+  }
+  .our-event-slider-cards-item.disabled .our-event-main_card .our-event-card_name::after {
+    background-color: #02cbd8;
+  }
+  .our-event-slider-cards-item.disabled .our-event-main_card .text-disabled {
+    color: rgba(255, 255, 255, .6);
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
+    line-height: 1;
+  }
   @media screen and (max-width: 1199px) {
     .our-events-header-wrap {
       margin-bottom: 120px;
@@ -1839,6 +2094,41 @@ html {
     .our-events-description p {
       font-size: 16px;
       line-height: 1.5;
+    }
+    .our-event-main_card {
+      min-width: 320px;
+      max-width: 320px;
+      padding: 25px 30px;
+    }
+    .our-event-main_card .our-event-svg_wrap svg {
+      max-height: 150px;
+    }
+    .our-event-card_name {
+      font-size: 24px;
+    }
+    .our-event-card-contacts_item a span {
+      font-size: 16px;
+    }
+    .our-event-card-contacts {
+      padding-right: 40px;
+    }
+    .our-event-main_card {
+      min-height: 540px;
+    }
+
+    .our-event-card-slide {
+      height: 420px;
+      padding: 30px 25px;
+      overflow-x: hidden;
+    }
+    .our-event-card-slide .our-event-svg_wrap svg {
+      max-height: 80px;  
+    }
+    .our-event-card-slide-description {
+      min-width: 0;
+    }
+    .our-event-card-slide .our-event-svg_wrap {
+      margin-bottom: 40px;
     }
   }
 
@@ -1907,9 +2197,16 @@ html {
       padding-right: 20px;
       height: 28px;
     }
-    .scheduled-meetings > h3,
     .scheduled-meetings-wrap .container > .blue-btn {
-      visibility: visible;
+      margin: 0 auto;
+      display: block;
+    }
+    .scheduled-meetings > h3 {
+      display: block;
+    }
+    .our-event-main_card {
+      min-width: 340px;
+      max-width: 340px;
     }
   }
 
@@ -1968,6 +2265,10 @@ html {
     .our-events-header-wrap {
       margin-bottom: 70px;
     }
+    .our-event-slider-cards-item {
+      display: block;
+      
+    }
   }
 
   @media screen and (max-width: 576px) {
@@ -1975,7 +2276,10 @@ html {
       padding-top: 75px;
     }
     .scheduled-meetings-slider-wrap::after {
-      display: none;
+      /*display: none;*/
+      height: calc(100% - 74px);
+      width: 10000px;
+      left: -5000px;
     }
     .scheduled-meetings-slider .scheduled-meetings-slide img {
       max-width: calc(100% - 30px);
@@ -2434,6 +2738,7 @@ html {
 
       .scheduled-meetings-slider-wrap {
         padding-left: 3.75rem;
+        max-width: 79.375rem;
       }
 
       .scheduled-meetings-slider-wrap::after {
@@ -2521,6 +2826,121 @@ html {
         border-bottom: 0.125rem solid #fff;
         border-left: 0.125rem solid #fff;
       }
+      .our-event-slider-cards-item {
+        padding: 1.875rem 0;
+      }
+      .our-event-slider-arrows {
+        top: 1.875rem;
+      }
+      .our-event-main_card {
+        min-width: 26.875rem;
+        max-width: 26.875rem;
+        min-height: 37.5rem;
+        padding: 3.125rem 3.75rem;
+        border-radius: 0.3125rem;
+      }
+      .our-event-main_card .our-event-svg_wrap {
+        max-height: 9.375rem;
+        margin-bottom: 3.75rem;
+      }
+      .our-event-card-slide .our-event-svg_wrap {
+        max-height: 6.25rem;
+      }
+      .our-event-card_name {
+        margin-bottom: 2.8125rem;
+        font-size: 1.875rem;
+      }
+
+      .our-event-card_name::after {
+        margin-left: 1.25rem;
+        width: 1.875rem;
+        height: 2px;
+      }
+
+      .our-event-card-contacts_item {
+        padding-left: 0.1875rem;
+      }
+
+      .our-event-card-contacts_item:not(:last-child) {
+        margin-bottom: 1.875rem;
+      }
+
+      .our-event-card-contacts_item a {
+        padding-left: 2.8125rem;
+      }
+
+      .our-event-card-contacts_item a svg {
+        left: 0.1875rem;
+      }
+
+      .our-event-card-contacts_item a span {
+        font-size: 1.25rem;
+      }
+
+      .our-event-card-contacts {
+        padding-bottom: 2.5rem;
+        padding-right: 3.75rem;
+      }
+      .view_on_map {
+        max-width: 13.125rem;
+        margin-top: 1.875rem;
+        padding-right: 1.875rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+
+      .view_on_map::after {
+        width: 0.375rem;
+        height: 0.375rem;
+      }
+
+      .our-event-slider_cards {
+        margin-right: -0.5rem;
+        padding-left: 0.625rem;
+      }
+      .our-event-slider_cards .slick-track .slick-slide {
+        margin: 0 0.625rem;
+      }
+
+      .our-event-card-slide {
+        height: 31.25rem;
+        max-width: 24.375rem;
+        padding: 3.75rem 3.125rem;
+        border-radius: 0.3125rem;
+      }
+
+      .our-event-card-slide .our-event-svg_wrap {
+        margin-bottom: 3rem;
+      }
+      .our-event-card-slide-name {
+        margin-bottom: 1.875rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
+
+      .our-event-card-slide-time {
+        margin-bottom: 2.5rem;
+        font-size: 1.125rem;
+        line-height: 0.8125rem;
+      }
+
+      .our-event-card-slide-description {
+        min-width: 18.125rem;
+        margin-bottom: 1.875rem;
+        font-size: 1rem;
+        line-height: 1.3125rem;
+      }
+
+      .our-event-card-slide-day {
+        font-size: 1.25rem;
+      }
+
+      .our-event-slider-cards-item.disabled .our-event-main_card .our-event-card_name {
+        margin-bottom: 4.375rem;
+      }
+      .our-event-slider-cards-item.disabled .our-event-main_card .text-disabled {
+        font-size: 1.25rem;
+      }
     /* Our events end */
   }
 
@@ -2580,4 +3000,4 @@ html {
     }
 
 }
-/* /Mobile horizontal */
+/* /Mobile horizontal 
