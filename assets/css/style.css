@@ -2338,8 +2338,235 @@ html {
     }
   }
 
-  
 /* Our events end */
+
+/* Contacts and map */
+  section.contacts {
+    padding-bottom: 285px;
+    background-color: #032131;
+  }
+
+  .com-block {
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    padding: 90px 150px 85px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: translateY(-50%);
+  }
+  .container.com {
+    position: relative;
+  }
+
+  .com-miniblock-first {
+    margin-right: 170px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .com-miniblock-first h2{
+    max-width: 390px;
+    word-break: break-word;
+    font-size: 48px;
+    line-height: 0.8;
+    font-weight: 400;
+  }
+
+  .com-miniblock-first h2 b {
+    font-weight: 600;
+    margin-top: 25px;
+    display: inline-block;
+  }
+
+  .com-miniblock-first span {
+    color: #e72b45;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+  }
+
+  .com-miniblock-second {
+    max-width: 500px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .com-miniblock-second h6 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .com-miniblock-second p {
+    color: rgba(0, 0, 0, .78);
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .com-miniblock-second .write-us {
+    width: fit-content;
+    color: #000000;
+    border-bottom: 2px solid #e72b45;
+  }
+
+  .com-miniblock-second button.write-us::after {
+    border-right: 2px solid #e72b45;
+    border-bottom: 2px solid #e72b45;
+  }
+/* Contacts and map end */
+
+/* Footer */
+  .footer {
+    padding-top: 20px;
+    background-color: #032131;
+  }
+
+  .footer-inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #02cbd8;
+  }
+
+  .footer-inner > ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+
+  .footer-inner > ul li {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    font-size: 18px;
+    line-height: 13px;
+    font-weight: 500;
+  }
+
+  .footer-inner > ul li a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-inner > ul li:not(:last-of-type) {
+    margin-right: 70px;
+  }
+
+  .footer-inner > ul li:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: #02cbd8;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+  }
+
+  .footer-inner a {
+    color: #fff;
+  }
+
+  .footer-inner .social ul {
+    max-width: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer .footer-inner .social ul li {
+    margin: 0;
+  }
+
+  .footer-inner .social ul li:not(:first-child) {
+    margin-left: 40px;
+  }
+
+  .footer-inner .social svg {
+    fill: #fff;
+  }
+
+  .footer-flex-block {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;  
+  }
+
+  .footer-location {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    margin-right: 130px;
+  }
+
+  .footer-phone_mail {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  
+  .footer-phone_mail a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+
+
+
+/* Footer end */
 
 
 /* Main end */
