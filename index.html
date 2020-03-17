@@ -528,6 +528,7 @@
                   </div>
                 </div>
               </div>
+              <div class="our-event-slider-dots our-event-slider-dots-1"></div>
               <div class="our-event-slider-arrows our-event-slider-arrows-1"></div>
             </div>
             <div class="our-event-slider-cards-item">
@@ -705,6 +706,7 @@
                   </div>
                 </div>
               </div>
+              <div class="our-event-slider-dots our-event-slider-dots-2"></div>
               <div class="our-event-slider-arrows our-event-slider-arrows-2"></div>
             </div>
             <div class="our-event-slider-cards-item disabled">
@@ -723,12 +725,6 @@
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <style>
-          #map {
-            width: 100%;
-            height: 700px;
-          }
-        </style>
         <div id="map"></div>
         <div class="container com">
           <div class="com-block">
@@ -837,82 +833,7 @@
   </div>
   <script src="assets/js/jquery-3.4.1.min.js"></script>
   <script src="assets/js/slick.min.js"></script>
-  <script>
-    var map,
-      marker,
-      coordinates = { lat: 49.432876, lng: 27.019411 },
-      styles = [
-                  {
-                      "featureType": "all",
-                      "stylers": [
-                          {
-                              "saturation": 0
-                          },
-                          {
-                              "hue": "#e7ecf0"
-                          }
-                      ]
-                  },
-                  {
-                      "featureType": "road",
-                      "stylers": [
-                          {
-                              "saturation": -70
-                          }
-                      ]
-                  },
-                  {
-                      "featureType": "transit",
-                      "stylers": [
-                          {
-                              "visibility": "off"
-                          }
-                      ]
-                  },
-                  {
-                      "featureType": "poi",
-                      "stylers": [
-                          {
-                              "visibility": "off"
-                          }
-                      ]
-                  },
-                  {
-                      "featureType": "water",
-                      "stylers": [
-                          {
-                              "visibility": "simplified"
-                          },
-                          {
-                              "saturation": -60
-                          }
-                      ]}
-              ],
-      markers = [
-        { lat: 49.432880, lng: 27.019412 },
-        { lat: 49.447568, lng: 27.007495 },
-        { lat: 49.435220, lng: 26.943635 }
-      ]
-    function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 49.434420, lng: 26.983000 },
-        zoom: 14,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        styles: styles
-      });
-      for (let i = 0; i < markers.length; i++) {
-        marker = new google.maps.Marker({
-          position: markers[i],
-          map: map,
-          animation: google.maps.Animation.DROP,
-          icon: 'assets/image/icons/map-marker.png'
-        });
-      }
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUL2KefTWgiBwwZrB_azo5TgEElAD35kM&callback=initMap" async defer></script>
-  <script src="assets/js/custom.js"></script>
+  <script id="custom_script" src="assets/js/custom.js"></script>
 </body>
 
 </html>
